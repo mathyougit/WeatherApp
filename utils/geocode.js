@@ -1,6 +1,7 @@
+require('dotenv').config();
 const request = require('request')
 
-const mbApiKey = process.env.WEATHER_KEY
+const mbApiKey = process.env.MB_KEY
 const language = 'en'
 
 const geocode = (address, callback) => {
